@@ -54,10 +54,10 @@ public class Main {
             item = input.nextLine();
         }
 
-        System.out.println("Item  | Quantity  | Description | Price  | Total  ");
+        System.out.println("Item\t Quantity\t Description\t Price\t\t  Total");
         for(int i =0; i <totalData.size();i++){
-            System.out.println(itemData.get(i)+"    " + quantityData.get(i)+"    " + descriptionData.get(i)+"    "+
-                    priceData.get(i)+"    " + totalData.get(i));
+            System.out.println(itemData.get(i)+"\t" + quantityData.get(i)+" \t \t  " + descriptionData.get(i)+"  \t "+
+                    priceData.get(i)+"\t\t  " + totalData.get(i));
         }
 
         System.out.println("Taxable sub-total: " + invoice.taxableSubTotal(totalData));
